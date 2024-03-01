@@ -1,0 +1,2654 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "ISection",
+            "id": "interface-ISection-f812ff2c2f24c35549ae6a50601187cbdfd137894fee5c3eda043b66cf87cd7e459753cdfc29c5a4b98ee5d7ee4f69c9074c70a20a5902dd1600d19447bf18cf",
+            "file": "src/app/models/section.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface ISection {\n  id: string;\n  section_title: string;\n  display_title: boolean;\n  section_images: ISectionImage[];\n  background: 'white' | 'black';\n  order: number;\n  active: boolean;\n}\nexport class Section {\n  id: string = '';\n  section_title: string = '';\n  display_title: boolean = false;\n  section_images: ISectionImage[] = [];\n  background: 'white' | 'black' = 'white';\n  order: number = 0;\n  active: boolean = true;\n  updatedBy: string = '';\n  createdOn: string = '';\n}\n\nexport interface ISectionImage {\n  id: string;\n  name: string;\n  description: string;\n  price: string;\n  imageUrl: string;\n  sold: boolean;\n  order: number;\n}\nexport class SectionImage {\n  id: string = '';\n  name: string = '';\n  description: string = '';\n  price: string = '';\n  imageUrl: string = '';\n  sold: boolean = false;\n  order: number = 0;\n  active: boolean = true;\n  updatedBy: string = '';\n  createdOn: string = '';\n}\n",
+            "properties": [
+                {
+                    "name": "active",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 8
+                },
+                {
+                    "name": "background",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "\"white\" | \"black\"",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "display_title",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "order",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "section_images",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ISectionImage[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "section_title",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "ISectionImage",
+            "id": "interface-ISectionImage-f812ff2c2f24c35549ae6a50601187cbdfd137894fee5c3eda043b66cf87cd7e459753cdfc29c5a4b98ee5d7ee4f69c9074c70a20a5902dd1600d19447bf18cf",
+            "file": "src/app/models/section.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface ISection {\n  id: string;\n  section_title: string;\n  display_title: boolean;\n  section_images: ISectionImage[];\n  background: 'white' | 'black';\n  order: number;\n  active: boolean;\n}\nexport class Section {\n  id: string = '';\n  section_title: string = '';\n  display_title: boolean = false;\n  section_images: ISectionImage[] = [];\n  background: 'white' | 'black' = 'white';\n  order: number = 0;\n  active: boolean = true;\n  updatedBy: string = '';\n  createdOn: string = '';\n}\n\nexport interface ISectionImage {\n  id: string;\n  name: string;\n  description: string;\n  price: string;\n  imageUrl: string;\n  sold: boolean;\n  order: number;\n}\nexport class SectionImage {\n  id: string = '';\n  name: string = '';\n  description: string = '';\n  price: string = '';\n  imageUrl: string = '';\n  sold: boolean = false;\n  order: number = 0;\n  active: boolean = true;\n  updatedBy: string = '';\n  createdOn: string = '';\n}\n",
+            "properties": [
+                {
+                    "name": "description",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                },
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                },
+                {
+                    "name": "imageUrl",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                },
+                {
+                    "name": "order",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 29
+                },
+                {
+                    "name": "price",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                },
+                {
+                    "name": "sold",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 28
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "User",
+            "id": "interface-User-d4821beac0e4a852e513391b7470981c4353fdd95a18628bb68136c8695b489ee15b926e2e5031bc26cf30e1508e0a362c3ee13a06734702b4d15af140e485d5",
+            "file": "src/stories/user.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface User {\n  name: string;\n}\n",
+            "properties": [
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        }
+    ],
+    "injectables": [
+        {
+            "name": "QuerysideService",
+            "id": "injectable-QuerysideService-e1bfad4c9388d87640bf21cdad77a28a1c861b99bfab71169c41757c3fbaea26fd5322d59049667600605ef1d9de54e62567b8b5a2db8a830a23e6d8f63d9826",
+            "file": "src/app/services/queryside.service.ts",
+            "properties": [
+                {
+                    "name": "cloudinaryUrl",
+                    "defaultValue": "'https://api.cloudinary.com/v1_1/denerup17/image/upload'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 15,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "httpClient",
+                    "defaultValue": "inject(HttpClient)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "HttpClient",
+                    "optional": false,
+                    "description": "",
+                    "line": 18,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "store",
+                    "defaultValue": "inject(Firestore)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Firestore",
+                    "optional": false,
+                    "description": "",
+                    "line": 19,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "name": "addSectionToCollection",
+                    "args": [
+                        {
+                            "name": "document",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "collectionName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "unknown",
+                    "typeParameters": [],
+                    "line": 25,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        134
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "document",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "collectionName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "deleteDocFromCollection",
+                    "args": [
+                        {
+                            "name": "docId",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "collectionName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "unknown",
+                    "typeParameters": [],
+                    "line": 33,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        134
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "docId",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "collectionName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "generateRandomId",
+                    "args": [
+                        {
+                            "name": "length",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "defaultValue": "8"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 42,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "length",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "defaultValue": "8",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getSection",
+                    "args": [
+                        {
+                            "name": "docId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "collectionName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "unknown",
+                    "typeParameters": [],
+                    "line": 38,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        134
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "docId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "collectionName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "uploadImage",
+                    "args": [
+                        {
+                            "name": "imageData",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Observable<any>",
+                    "typeParameters": [],
+                    "line": 21,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "imageData",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { HttpClient } from '@angular/common/http';\nimport { Injectable, inject } from '@angular/core';\nimport { Observable } from 'rxjs';\nimport {\n  Firestore,\n  addDoc,\n  collection,\n  deleteDoc,\n  doc,\n  getDoc,\n} from '@angular/fire/firestore';\n\n@Injectable({ providedIn: 'root' })\nexport class QuerysideService {\n  private cloudinaryUrl =\n    'https://api.cloudinary.com/v1_1/denerup17/image/upload';\n\n  private httpClient: HttpClient = inject(HttpClient);\n  private store: Firestore = inject(Firestore);\n\n  uploadImage(imageData: any): Observable<any> {\n    return this.httpClient.post(`${this.cloudinaryUrl}`, imageData);\n  }\n\n  async addSectionToCollection(document: any, collectionName: string) {\n    console.log(document);\n    const id = this.generateRandomId(12);\n\n    const collectionRef = collection(this.store, collectionName);\n    return await addDoc(collectionRef, { ...document, id });\n  }\n\n  async deleteDocFromCollection(docId: any, collectionName: string) {\n    const docRef = doc(this.store, collectionName, docId);\n    return await deleteDoc(docRef);\n  }\n\n  async getSection(docId: string, collectionName: string) {\n    return (await getDoc(doc(this.store, collectionName, docId))).data();\n  }\n\n  generateRandomId(length = 8) {\n    const characters =\n      'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';\n    let randomId = '';\n\n    for (let i = 0; i < length; i++) {\n      const randomIndex = Math.floor(Math.random() * characters.length);\n      randomId += characters.charAt(randomIndex);\n    }\n\n    return randomId;\n  }\n}\n",
+            "extends": [],
+            "type": "injectable"
+        },
+        {
+            "name": "SectionService",
+            "id": "injectable-SectionService-1fa99d6f0d6c14066e5d37a0ad5076dc0d40c3e0a960401e5ac7f33d9415240c6c5054ecc73dc177bf954534512602f6fa23e577e5c84cd09a137b5c4d7459ff",
+            "file": "src/app/services/section.service.ts",
+            "properties": [
+                {
+                    "name": "querysideService",
+                    "defaultValue": "inject(QuerysideService)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "QuerysideService",
+                    "optional": false,
+                    "description": "",
+                    "line": 9,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methods": [
+                {
+                    "name": "delete",
+                    "args": [
+                        {
+                            "name": "sectionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 21,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        125
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "sectionId",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "save",
+                    "args": [
+                        {
+                            "name": "section",
+                            "type": "ISection",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 13,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        125,
+                        134
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "section",
+                            "type": "ISection",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable, inject } from '@angular/core';\nimport { QuerysideService } from './queryside.service';\nimport { ISection } from '../models/section';\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class SectionService {\n  private querysideService: QuerysideService = inject(QuerysideService);\n\n  constructor() {}\n\n  public async save(section: ISection) {\n    const res = await this.querysideService.addSectionToCollection(\n      section,\n      'section'\n    );\n    return;\n  }\n\n  public delete(sectionId: string) {\n    console.log(sectionId);\n    const res = this.querysideService.deleteDocFromCollection(\n      sectionId,\n      'section'\n    );\n    console.log(res);\n  }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 9
+            },
+            "extends": [],
+            "type": "injectable"
+        }
+    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [
+        {
+            "name": "Section",
+            "id": "class-Section-f812ff2c2f24c35549ae6a50601187cbdfd137894fee5c3eda043b66cf87cd7e459753cdfc29c5a4b98ee5d7ee4f69c9074c70a20a5902dd1600d19447bf18cf",
+            "file": "src/app/models/section.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "export interface ISection {\n  id: string;\n  section_title: string;\n  display_title: boolean;\n  section_images: ISectionImage[];\n  background: 'white' | 'black';\n  order: number;\n  active: boolean;\n}\nexport class Section {\n  id: string = '';\n  section_title: string = '';\n  display_title: boolean = false;\n  section_images: ISectionImage[] = [];\n  background: 'white' | 'black' = 'white';\n  order: number = 0;\n  active: boolean = true;\n  updatedBy: string = '';\n  createdOn: string = '';\n}\n\nexport interface ISectionImage {\n  id: string;\n  name: string;\n  description: string;\n  price: string;\n  imageUrl: string;\n  sold: boolean;\n  order: number;\n}\nexport class SectionImage {\n  id: string = '';\n  name: string = '';\n  description: string = '';\n  price: string = '';\n  imageUrl: string = '';\n  sold: boolean = false;\n  order: number = 0;\n  active: boolean = true;\n  updatedBy: string = '';\n  createdOn: string = '';\n}\n",
+            "properties": [
+                {
+                    "name": "active",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "background",
+                    "defaultValue": "'white'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "\"white\" | \"black\"",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                },
+                {
+                    "name": "createdOn",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                },
+                {
+                    "name": "display_title",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "id",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "order",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "section_images",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ISectionImage[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "section_title",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "updatedBy",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                }
+            ],
+            "methods": [],
+            "indexSignatures": [],
+            "extends": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "hostBindings": [],
+            "hostListeners": []
+        },
+        {
+            "name": "SectionImage",
+            "id": "class-SectionImage-f812ff2c2f24c35549ae6a50601187cbdfd137894fee5c3eda043b66cf87cd7e459753cdfc29c5a4b98ee5d7ee4f69c9074c70a20a5902dd1600d19447bf18cf",
+            "file": "src/app/models/section.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "export interface ISection {\n  id: string;\n  section_title: string;\n  display_title: boolean;\n  section_images: ISectionImage[];\n  background: 'white' | 'black';\n  order: number;\n  active: boolean;\n}\nexport class Section {\n  id: string = '';\n  section_title: string = '';\n  display_title: boolean = false;\n  section_images: ISectionImage[] = [];\n  background: 'white' | 'black' = 'white';\n  order: number = 0;\n  active: boolean = true;\n  updatedBy: string = '';\n  createdOn: string = '';\n}\n\nexport interface ISectionImage {\n  id: string;\n  name: string;\n  description: string;\n  price: string;\n  imageUrl: string;\n  sold: boolean;\n  order: number;\n}\nexport class SectionImage {\n  id: string = '';\n  name: string = '';\n  description: string = '';\n  price: string = '';\n  imageUrl: string = '';\n  sold: boolean = false;\n  order: number = 0;\n  active: boolean = true;\n  updatedBy: string = '';\n  createdOn: string = '';\n}\n",
+            "properties": [
+                {
+                    "name": "active",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 39
+                },
+                {
+                    "name": "createdOn",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 41
+                },
+                {
+                    "name": "description",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 34
+                },
+                {
+                    "name": "id",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 32
+                },
+                {
+                    "name": "imageUrl",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 36
+                },
+                {
+                    "name": "name",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 33
+                },
+                {
+                    "name": "order",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 38
+                },
+                {
+                    "name": "price",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 35
+                },
+                {
+                    "name": "sold",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 37
+                },
+                {
+                    "name": "updatedBy",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 40
+                }
+            ],
+            "methods": [],
+            "indexSignatures": [],
+            "extends": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "hostBindings": [],
+            "hostListeners": []
+        }
+    ],
+    "directives": [],
+    "components": [
+        {
+            "name": "AddImageComponent",
+            "id": "component-AddImageComponent-4377849e550f0163eeea38338b81731bf319aa19a6b557657e14e58ebaa6ab5d1af2e19c52fceac90d10d680554175e0ab1f311f07023cea80ffb3d59361b918",
+            "file": "src/app/modals/add-image/add-image.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-add-image",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./add-image.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "data",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "SectionImage",
+                    "optional": false,
+                    "description": "",
+                    "line": 13,
+                    "decorators": [
+                        {
+                            "name": "Inject",
+                            "stringifiedArguments": "MAT_DIALOG_DATA"
+                        }
+                    ],
+                    "modifierKind": [
+                        170,
+                        125
+                    ]
+                },
+                {
+                    "name": "dialogRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "MatDialogRef<AddImageComponent>",
+                    "optional": false,
+                    "description": "",
+                    "line": 12,
+                    "modifierKind": [
+                        125
+                    ]
+                },
+                {
+                    "name": "file",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                },
+                {
+                    "name": "fileName",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                },
+                {
+                    "name": "imageForm",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "SectionImage",
+                    "optional": false,
+                    "description": "",
+                    "line": 28
+                },
+                {
+                    "name": "imageUrl",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 27
+                },
+                {
+                    "name": "todaysDate",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "closeDialog",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 53,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onFileSelected",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "previewImage",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 45,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Inject } from '@angular/core';\nimport { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';\nimport { SectionImage } from 'src/app/models/section';\n\n@Component({\n  selector: 'app-add-image',\n  templateUrl: './add-image.component.html',\n  styleUrl: './add-image.component.scss',\n})\nexport class AddImageComponent {\n  constructor(\n    public dialogRef: MatDialogRef<AddImageComponent>,\n    @Inject(MAT_DIALOG_DATA) public data: SectionImage\n  ) {\n    if (data) {\n      this.imageForm = data;\n      this.imageUrl =\n        'https://res.cloudinary.com/denerup17/image/upload/v1707048218/' +\n        data.imageUrl;\n    } else {\n      this.imageForm = new SectionImage();\n    }\n  }\n  file: any;\n  fileName: string = '';\n  todaysDate: string = '';\n  imageUrl: string = '';\n  imageForm: SectionImage;\n\n  onFileSelected(event: any): void {\n    const inputElement = event.target as HTMLInputElement;\n    if (inputElement.files && inputElement.files.length > 0) {\n      this.file = inputElement.files[0];\n      this.fileName = this.file.name;\n\n      // Format today's date (e.g., YYYYMMDD)\n      const today = new Date();\n      this.todaysDate = today.toISOString().slice(0, 10).replace(/-/g, '');\n\n      // Optional: Display a preview of the selected image\n      this.previewImage();\n    }\n  }\n\n  private previewImage(): void {\n    const reader = new FileReader();\n    reader.onload = (e) => {\n      this.imageUrl = e.target?.result as string;\n    };\n    reader.readAsDataURL(this.file);\n  }\n\n  closeDialog() {\n    this.dialogRef?.close({\n      file: this.file,\n      imageData: this.imageForm,\n    });\n  }\n}\n",
+            "styleUrl": "./add-image.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "dialogRef",
+                        "type": "MatDialogRef<AddImageComponent>",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    },
+                    {
+                        "name": "data",
+                        "type": "SectionImage",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 10,
+                "jsdoctags": [
+                    {
+                        "name": "dialogRef",
+                        "type": "MatDialogRef<AddImageComponent>",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    },
+                    {
+                        "name": "data",
+                        "type": "SectionImage",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": [],
+            "templateData": "<form>\n  <h2>Add Image</h2>\n  <mat-form-field>\n    <mat-label> Image Name </mat-label>\n    <input matInput [(ngModel)]=\"imageForm.name\" name=\"name\" />\n  </mat-form-field>\n\n  <div class=\"row\">\n    <mat-form-field>\n      <mat-label> Price </mat-label>\n      <input matInput [(ngModel)]=\"imageForm.price\" name=\"price\" />\n    </mat-form-field>\n    <mat-form-field>\n      <mat-label> Order </mat-label>\n      <input\n        matInput\n        type=\"number\"\n        [(ngModel)]=\"imageForm.order\"\n        name=\"order\"\n      />\n    </mat-form-field>\n\n    <mat-form-field>\n      <mat-label> Sold </mat-label>\n      <mat-select matInput [(ngModel)]=\"imageForm.sold\" name=\"sold\">\n        <mat-option [value]=\"true\">True</mat-option>\n        <mat-option [value]=\"false\">False</mat-option>\n      </mat-select>\n    </mat-form-field>\n\n    <mat-form-field>\n      <mat-label> Active </mat-label>\n      <mat-select matInput [(ngModel)]=\"imageForm.active\" name=\"active\">\n        <mat-option [value]=\"true\">True</mat-option>\n        <mat-option [value]=\"false\">False</mat-option>\n      </mat-select>\n    </mat-form-field>\n  </div>\n\n  <mat-form-field>\n    <mat-label> Description </mat-label>\n    <textarea\n      matInput\n      rows=\"10\"\n      cols=\"5\"\n      [(ngModel)]=\"imageForm.description\"\n      name=\"description\"\n    ></textarea>\n  </mat-form-field>\n\n  <img [src]=\"imageUrl\" width=\"150px\" height=\"200px\" *ngIf=\"imageUrl\" />\n\n  <button\n    type=\"button\"\n    mat-raised-button\n    color=\"primary\"\n    (click)=\"fileInput.click()\"\n  >\n    Choose File\n  </button>\n  <input\n    hidden\n    (change)=\"onFileSelected($event)\"\n    #fileInput\n    type=\"file\"\n    id=\"file\"\n  />\n</form>\n\n<button mat-raised-button color=\"secondary\" (click)=\"closeDialog()\">\n  Save\n</button>\n"
+        },
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-eca84e155d0c7b73e31c4a2912349d6fb24216ae2536a9fab5d7a40ed528ec79311723c5d8c7d6e77d006b86bb5326598d1ed4f4ec20473df4a0fbe7c4857c2c",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [
+                "./app.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "title",
+                    "defaultValue": "'studio-67-admin'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent {\n  title = 'studio-67-admin';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".navbar {\n  display: flex;\n  justify-content: space-between;\n  padding: 0 16px;\n}\n\n.content-container {\n  width: 100%;\n  min-height: 100vh;\n  .sidenav {\n    min-width: 200px;\n\n    .sidenav-links {\n      margin: 0;\n      padding: 0;\n      display: flex;\n      flex-direction: column;\n      justify-content: center;\n      align-items: center;\n      gap: 1rem;\n      width: 100%;\n      li {\n        text-align: center;\n        list-style: none;\n        width: 100%;\n        padding: 10px;\n        cursor: pointer;\n        &:hover,\n        &.active {\n          background-color: whitesmoke;\n          color: black;\n        }\n      }\n    }\n  }\n\n  .main {\n    margin: 15px;\n  }\n}\n",
+                    "styleUrl": "./app.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<mat-toolbar class=\"navbar\">\n  <span>Studio 67 admin</span>\n  <span>Log in</span>\n</mat-toolbar>\n\n<mat-drawer-container class=\"content-container\" autosize>\n  <mat-drawer #drawer class=\"sidenav\" mode=\"side\" [opened]=\"true\">\n    <ul class=\"sidenav-links\">\n      <li routerLink=\"create-section\" routerLinkActive=\"active\">\n        Create new Section\n      </li>\n      <li routerLink=\"view-edit-section\" routerLinkActive=\"active\">\n        View/Edit Sections\n      </li>\n      <li routerLink=\"image-library\" routerLinkActive=\"active\">\n        Image Library\n      </li>\n    </ul>\n  </mat-drawer>\n\n  <div class=\"main\">\n    <router-outlet></router-outlet>\n  </div>\n</mat-drawer-container>\n"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-86e2311c54fbca7431c12e070d0fd5b0ebe343eec0553a392f182ba0e04a8f86613233d26ee47718fd0e7a65078f580c76a1fcc928ce55de81193d6618025bc4",
+            "file": "src/stories/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-button",
+            "styleUrls": [
+                "./button.css"
+            ],
+            "styles": [],
+            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nWhat background color to use\n",
+                    "description": "<p>What background color to use</p>\n",
+                    "line": 29,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 798,
+                            "end": 811,
+                            "flags": 16842752,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 334,
+                            "tagName": {
+                                "pos": 799,
+                                "end": 807,
+                                "flags": 16842752,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 80,
+                                "escapedText": "required"
+                            },
+                            "comment": ""
+                        }
+                    ],
+                    "rawdescription": "\n\nButton contents\n\n",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 43,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nIs this the principal call to action on the page?\n",
+                    "description": "<p>Is this the principal call to action on the page?</p>\n",
+                    "line": 23,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nHow large should the button be?\n",
+                    "description": "<p>How large should the button be?</p>\n",
+                    "line": 35,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nOptional click handler\n",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 49,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  standalone: true,\n  imports: [CommonModule],\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-button {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.storybook-button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.storybook-button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.storybook-button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.storybook-button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
+                    "styleUrl": "./button.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 51
+                    }
+                }
+            }
+        },
+        {
+            "name": "CreateSectionComponent",
+            "id": "component-CreateSectionComponent-37c8a5c424ffbdefcbe6344b38920e14f3eec8f8beb9e5452fb31108e6e5c29a7de48e6d3ab03422fbb68614ece62efb566d896f37447e83af395db2aa295640",
+            "file": "src/app/components/create-section/create-section.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-create-section",
+            "styleUrls": [
+                "./create-section.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./create-section.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "activatedRoute",
+                    "defaultValue": "inject(ActivatedRoute)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ActivatedRoute",
+                    "optional": false,
+                    "description": "",
+                    "line": 18,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "dialog",
+                    "defaultValue": "inject(MatDialog)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "MatDialog",
+                    "optional": false,
+                    "description": "",
+                    "line": 19,
+                    "modifierKind": [
+                        125
+                    ]
+                },
+                {
+                    "name": "file",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                },
+                {
+                    "name": "fileName",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                },
+                {
+                    "name": "imageUrl",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                },
+                {
+                    "name": "querysideService",
+                    "defaultValue": "inject(QuerysideService)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "QuerysideService",
+                    "optional": false,
+                    "description": "",
+                    "line": 17,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "section",
+                    "defaultValue": "signal(new Section())",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "todaysDate",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string | undefined",
+                    "optional": false,
+                    "description": "",
+                    "line": 26
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "loadImageDialog",
+                    "args": [
+                        {
+                            "name": "image",
+                            "type": "ISectionImage | null",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 48,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "image",
+                            "type": "ISectionImage | null",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 28,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "save",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 94,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        134
+                    ]
+                },
+                {
+                    "name": "uploadImage",
+                    "args": [
+                        {
+                            "name": "image",
+                            "type": "File",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "name",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 40,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "image",
+                            "type": "File",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "name",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit, inject, signal } from '@angular/core';\nimport { ISection, ISectionImage, Section } from 'src/app/models/section';\nimport { forkJoin, map, of, switchMap } from 'rxjs';\nimport { Cloudinary } from '@cloudinary/url-gen';\nimport { QuerysideService } from 'src/app/services/queryside.service';\nimport { MatDialog } from '@angular/material/dialog';\nimport { AddImageComponent } from 'src/app/modals/add-image/add-image.component';\nimport { ActivatedRoute } from '@angular/router';\n\n@Component({\n  selector: 'app-create-section',\n  templateUrl: './create-section.component.html',\n  styleUrls: ['./create-section.component.scss'],\n})\nexport class CreateSectionComponent implements OnInit {\n  // services\n  private querysideService: QuerysideService = inject(QuerysideService);\n  private activatedRoute: ActivatedRoute = inject(ActivatedRoute);\n  public dialog: MatDialog = inject(MatDialog);\n\n  // component state\n  section: any = signal(new Section());\n  file: any = null;\n  imageUrl: string | null = null;\n  fileName: string | null = null;\n  todaysDate: string | undefined;\n\n  ngOnInit(): void {\n    const cld = new Cloudinary({ cloud: { cloudName: 'denerup17' } });\n    this.activatedRoute.paramMap.subscribe(async (params) => {\n      const id = params.get('id');\n      if (id) {\n        this.section.set(\n          (await this.querysideService.getSection(id, 'section')) as ISection\n        );\n      }\n    });\n  }\n\n  uploadImage(image: File, name: string) {\n    const data = new FormData();\n    data.append('file', image);\n    data.append('public_id', `gallery/${name}`);\n    data.append('upload_preset', 'section');\n    return this.querysideService.uploadImage(data);\n  }\n\n  loadImageDialog(image: ISectionImage | null) {\n    const dialogRef = this.dialog.open(AddImageComponent, {\n      data: image,\n    });\n\n    dialogRef\n      .afterClosed()\n      .pipe(\n        switchMap((data: any) => {\n          if (data && !data.file) {\n            return of([null, data]);\n          }\n          if (data && data?.imageData) {\n            const uploadImage$ = this.uploadImage(\n              data.file,\n              data.imageData.name\n            );\n            const dialogData$ = of(data);\n            return forkJoin([uploadImage$, dialogData$]);\n          }\n\n          return of([]);\n        }),\n        map((res) => {\n          if (res.length > 0) {\n            const [uploadData, dialogData] = res;\n            const imageUrl = uploadData\n              ? uploadData?.public_id || uploadData?.url\n              : dialogData.imageData.imageUrl;\n            return { ...dialogData.imageData, imageUrl };\n          }\n          return null;\n        })\n      )\n      .subscribe((result) => {\n        if (result) {\n          const ind = this.section.section_images.findIndex(\n            (image: ISectionImage) => image.id === result.id\n          );\n          ind > -1\n            ? this.section.section_images.splice(ind, 1, result)\n            : this.section.section_images.push(result);\n        }\n      });\n  }\n\n  async save() {\n    const res = await this.querysideService.addSectionToCollection(\n      this.section,\n      'section'\n    );\n    return;\n  }\n\n  get disabled() {\n    return !(\n      Boolean(this.section.section_title) && Boolean(this.section.background)\n    );\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ":host {\n  width: 100%;\n  padding: 16px 24px;\n  margin: 10px;\n  form {\n    border-radius: 8px;\n    padding: 8px 12px;\n    display: flex;\n    flex-direction: column;\n    border: 1px solid grey;\n    gap: 1rem;\n    .title-row {\n      width: 100%;\n      display: flex;\n      align-items: center;\n    }\n\n    .meta-container {\n      display: flex;\n      gap: 1rem;\n      flex-wrap: wrap;\n    }\n\n    .images-container {\n      width: 100%;\n      display: flex;\n      flex-wrap: wrap;\n      gap: 1rem;\n    }\n  }\n}\n",
+                    "styleUrl": "./create-section.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "implements": [
+                "OnInit"
+            ],
+            "accessors": {
+                "disabled": {
+                    "name": "disabled",
+                    "getSignature": {
+                        "name": "disabled",
+                        "type": "",
+                        "returnType": "",
+                        "line": 102
+                    }
+                }
+            },
+            "templateData": "<form>\n  <div class=\"title-row\">\n    <mat-form-field>\n      <mat-label>Section Title</mat-label>\n      <input\n        matInput\n        [(ngModel)]=\"section.section_title\"\n        name=\"section_title\"\n      />\n    </mat-form-field>\n    <mat-checkbox\n      class=\"title-checkbox\"\n      matInput\n      [(ngModel)]=\"section.display_title\"\n      name=\"display_section\"\n      >Display Title</mat-checkbox\n    >\n  </div>\n  <div class=\"meta-container\">\n    <mat-form-field>\n      <mat-label>Background Color</mat-label>\n      <mat-select matInput [(ngModel)]=\"section.background\" name=\"background\">\n        <mat-option value=\"black\">Black</mat-option>\n        <mat-option value=\"white\">White</mat-option>\n      </mat-select>\n    </mat-form-field>\n\n    <mat-form-field>\n      <mat-label>Order</mat-label>\n      <input matInput type=\"number\" [(ngModel)]=\"section.order\" name=\"order\" />\n    </mat-form-field>\n\n    <mat-form-field>\n      <mat-label>Active</mat-label>\n      <mat-select matInput [(ngModel)]=\"section.active\" name=\"active\">\n        <mat-option [value]=\"true\">True</mat-option>\n        <mat-option [value]=\"false\">False</mat-option>\n      </mat-select>\n    </mat-form-field>\n\n    <button\n      mat-raised-button\n      color=\"primary\"\n      (click)=\"loadImageDialog(null)\"\n      type=\"button\"\n    >\n      Add Image\n    </button>\n  </div>\n  <div class=\"images-container\">\n    @for(image of section.section_images; track image){\n    <img\n      [src]=\"\n        'https://res.cloudinary.com/denerup17/image/upload/v1707048218/' +\n        image.imageUrl\n      \"\n      width=\"250\"\n      height=\"300\"\n      (click)=\"loadImageDialog(image)\"\n    />\n    }\n  </div>\n\n  <button\n    mat-raised-button\n    color=\"primary\"\n    [disabled]=\"disabled\"\n    (click)=\"save()\"\n  >\n    Save\n  </button>\n</form>\n"
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-cad94b233ec8e80ceb541e7972c5f9737e08237b4e137112f3987ca48ee0cce5c0d57798d41daa5d4d24d6bdbb2df1606ab68cca2aa0a1785e38f99f3cac0729",
+            "file": "src/stories/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-header",
+            "styleUrls": [
+                "./header.css"
+            ],
+            "styles": [],
+            "template": "<header>    <div class=\"storybook-header\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            [primary]=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 69,
+                    "type": "User | null",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 78,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 72,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 75,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "ButtonComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport { ButtonComponent } from './button.component';\nimport type { User } from './user';\n\n@Component({\n  selector: 'storybook-header',\n  standalone: true,\n  imports: [CommonModule, ButtonComponent],\n  template: `<header>\n    <div class=\"storybook-header\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            [primary]=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport class HeaderComponent {\n  @Input()\n  user: User | null = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-header {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n.storybook-header svg {\n  display: inline-block;\n  vertical-align: top;\n}\n\n.storybook-header h1 {\n  font-weight: 700;\n  font-size: 20px;\n  line-height: 1;\n  margin: 6px 0 6px 10px;\n  display: inline-block;\n  vertical-align: top;\n}\n\n.storybook-header button + button {\n  margin-left: 10px;\n}\n\n.storybook-header .welcome {\n  color: #333;\n  font-size: 14px;\n  margin-right: 10px;\n}\n",
+                    "styleUrl": "./header.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
+            "name": "ImageLibraryComponent",
+            "id": "component-ImageLibraryComponent-d1f6b3a4c27c8539f81963a8d4c4fb156cd116c35f1e774c0d9c4a7a006fe812d5249a07d775aac37a1042e8d2972c859863baa331bdc75777c07da325cbbe90",
+            "file": "src/app/components/image-library/image-library.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-image-library",
+            "styleUrls": [
+                "./image-library.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./image-library.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-image-library',\n  templateUrl: './image-library.component.html',\n  styleUrls: ['./image-library.component.scss']\n})\nexport class ImageLibraryComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./image-library.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "extends": [],
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<p>image-library works!</p>\n"
+        },
+        {
+            "name": "PageComponent",
+            "id": "component-PageComponent-d32b0f19628254ea3fc5526c4d4564ada1cc83cf936759006d90a46f5874b02a3359e331bddda20b22e74a616a6443c660602ba74dd38ebe1160759e0de6f7ba",
+            "file": "src/stories/page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-page",
+            "styleUrls": [
+                "./page.css"
+            ],
+            "styles": [],
+            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section class=\"storybook-page\">\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 69
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "doCreateAccount",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 79,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogin",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 75,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogout",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 71,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "HeaderComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport { HeaderComponent } from './header.component';\nimport type { User } from './user';\n\n@Component({\n  selector: 'storybook-page',\n  standalone: true,\n  imports: [CommonModule, HeaderComponent],\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section class=\"storybook-page\">\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport class PageComponent {\n  user: User | null = null;\n\n  doLogout() {\n    this.user = null;\n  }\n\n  doLogin() {\n    this.user = { name: 'Jane Doe' };\n  }\n\n  doCreateAccount() {\n    this.user = { name: 'Jane Doe' };\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-page {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\n.storybook-page h2 {\n  font-weight: 700;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\n.storybook-page p {\n  margin: 1em 0;\n}\n\n.storybook-page a {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\n.storybook-page ul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\n.storybook-page li {\n  margin-bottom: 8px;\n}\n\n.storybook-page .tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\n.storybook-page .tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\n.storybook-page .tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\n.storybook-page .tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "styleUrl": "./page.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
+            "name": "ViewEditSectionComponent",
+            "id": "component-ViewEditSectionComponent-5c0f8023db16ebc8bc68f19d04268284068c3643265242dc5dfa53d86b011bd1d52ee956358b471b43ea6a3a22e94c80f7a659a229df304976af7d2f4fb74c90",
+            "file": "src/app/components/view-edit-section/view-edit-section.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-view-edit-section",
+            "styleUrls": [
+                "./view-edit-section.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./view-edit-section.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "dialog",
+                    "defaultValue": "inject(MatDialog)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "MatDialog",
+                    "optional": false,
+                    "description": "",
+                    "line": 14,
+                    "modifierKind": [
+                        125
+                    ]
+                },
+                {
+                    "name": "editMode",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "firestore",
+                    "defaultValue": "inject(Firestore)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Firestore",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "sections$",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Observable<any[]> | undefined",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                },
+                {
+                    "name": "sectionService",
+                    "defaultValue": "inject(SectionService)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "SectionService",
+                    "optional": false,
+                    "description": "",
+                    "line": 15,
+                    "modifierKind": [
+                        123
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "delete",
+                    "args": [
+                        {
+                            "name": "section",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 47,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        134
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "section",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "editImage",
+                    "args": [
+                        {
+                            "name": "image",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 37,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "image",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 22,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "save",
+                    "args": [
+                        {
+                            "name": "section",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 43,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        134
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "section",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "toggleEditMode",
+                    "args": [
+                        {
+                            "name": "section",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "section",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit, inject } from '@angular/core';\nimport { Firestore, collection, collectionData } from '@angular/fire/firestore';\nimport { MatDialog } from '@angular/material/dialog';\nimport { Observable, map, tap } from 'rxjs';\nimport { AddImageComponent } from 'src/app/modals/add-image/add-image.component';\nimport { SectionService } from 'src/app/services/section.service';\n@Component({\n  selector: 'app-view-edit-section',\n  templateUrl: './view-edit-section.component.html',\n  styleUrls: ['./view-edit-section.component.scss'],\n})\nexport class ViewEditSectionComponent implements OnInit {\n  // services\n  public dialog: MatDialog = inject(MatDialog);\n  private sectionService: SectionService = inject(SectionService);\n  firestore: Firestore = inject(Firestore);\n\n  // component state\n  sections$: Observable<any[]> | undefined;\n  editMode: boolean = false;\n\n  ngOnInit(): void {\n    const aCollection = collection(this.firestore, 'section');\n    this.sections$ = collectionData(aCollection, { idField: 'docId' }).pipe(\n      map((data) => data.sort((a: any, b: any) => b.order - a.order)),\n      tap((data) => console.log(data))\n    );\n  }\n\n  toggleEditMode(section: any) {\n    /*     if (this.editMode) {\n      this.save(section);\n    }\n    this.editMode = !this.editMode; */\n  }\n\n  editImage(image: any) {\n    const res = this.dialog.open(AddImageComponent, {\n      data: image,\n    });\n  }\n\n  async save(section: any) {\n    await this.sectionService.save(section);\n  }\n\n  async delete(section: any) {\n    await this.sectionService.delete(section.docId);\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@import url(\"https://fonts.googleapis.com/css2?family=Notable&display=swap\");\n@import url(\"https://fonts.googleapis.com/css2?family=Notable&family=Source+Sans+3&display=swap\");\n\n.section {\n  width: 100%;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  flex-direction: column;\n  position: relative;\n  padding: 5rem;\n  .edit-btn {\n    position: absolute;\n    top: 0;\n    right: 0;\n  }\n  .delete-btn {\n    position: absolute;\n    top: 0;\n    left: 0;\n  }\n  h1 {\n    font-size: 90px;\n    padding: 5rem;\n    font-family: \"Notable\", sans-serif;\n    text-align: center;\n  }\n  &.black-background {\n    h1 {\n      color: white;\n    }\n    background-color: black;\n  }\n  &.white-background {\n    background-color: white;\n    h1 {\n      color: black;\n    }\n  }\n  .cards-container {\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: row !important;\n    align-items: flex-start;\n    gap: 4rem;\n    height: -moz-fit-content;\n    height: fit-content;\n  }\n}\n.gallery-card {\n  flex-grow: 1;\n  height: fit-content;\n  padding-bottom: 2rem;\n  width: calc(18% - 1rem);\n  border-radius: var(--border-radius);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  color: black;\n  position: relative;\n  cursor: pointer;\n  transition: 1s all ease;\n  gap: 1rem;\n}\n.edit-btn {\n  position: absolute;\n  top: 10px;\n  right: 10px;\n  z-index: 1000;\n}\n.gallery-card img {\n  border-radius: 1rem;\n}\n\n.gallery-card .card-details {\n  display: flex;\n  width: 100%;\n  flex-direction: column;\n  justify-content: flex-start;\n}\n\n.gallery-card .image-container {\n  position: relative;\n  max-width: 400px;\n}\n\n.gallery-card .image-container .sold-banner {\n  width: 100%;\n  height: 30px;\n  background-color: green;\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  border-bottom-left-radius: 0.5rem;\n  border-bottom-right-radius: 0.5rem;\n  color: white;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 1;\n}\n\n.gallery-card h5 {\n  font-size: 22px;\n  font-style: normal;\n  font-weight: 400;\n  font-family: \"Notable\", sans-serif;\n}\n\n.gallery-card h6 {\n  font-size: 22px;\n  font-style: normal;\n  font-weight: 400;\n  font-family: \"Source Sans 3\", sans-serif;\n}\n\n.gallery-card img {\n  width: 100%;\n  height: auto;\n}\n",
+                    "styleUrl": "./view-edit-section.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "@for (section of sections$ | async; track $index) {\n<section [ngClass]=\"['section', section.background + '-background']\">\n  <button\n    mat-button\n    class=\"edit-btn\"\n    color=\"primary\"\n    [routerLink]=\"'/create-section/' + section.docId\"\n  >\n    {{ editMode ? \"Save\" : \"Edit\" }}\n  </button>\n  @if(editMode){\n  <button\n    mat-fab\n    color=\"warn\"\n    aria-label=\"Example icon button with a delete icon\"\n    class=\"delete-btn\"\n    (click)=\"delete(section)\"\n  >\n    <mat-icon>delete</mat-icon>\n  </button>\n  }\n\n  <h1>{{ section.section_title }}</h1>\n  <div class=\"cards-container\">\n    @for (item of section.section_images; track $index) {\n    <div class=\"gallery-card\">\n      @if(editMode){<button\n        mat-icon-button\n        class=\"edit-btn\"\n        (click)=\"editImage(item)\"\n      >\n        <mat-icon fontIcon=\"edit\"></mat-icon></button\n      >}\n      <div class=\"image-container\">\n        @if(item.sold){\n        <div className=\"sold-banner\">Sold</div>\n        }\n        <img\n          [alt]=\"item.name\"\n          [src]=\"\n            'https://res.cloudinary.com/denerup17/image/upload/v1707048218/' +\n            item.imageUrl\n          \"\n        />\n      </div>\n\n      <div className=\"card-details\">\n        <h5>{{ item.name }}</h5>\n        <h6 className=\"{sourceSansPro.className}\">£{{ item.price }}</h6>\n      </div>\n    </div>\n    }\n  </div>\n</section>\n}\n"
+        }
+    ],
+    "modules": [
+        {
+            "name": "AppModule",
+            "id": "module-AppModule-94fbb0b91e867ef4e836e72163dd3d73befe00aa015b019ea3ec539f5fcafbbfc68a168633bdac6d12c01ebe88ace310851fb7b949a59b9948aad61a83f3213a",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { BrowserModule } from '@angular/platform-browser';\nimport { ReactiveFormsModule, FormsModule } from '@angular/forms';\nimport { HttpClientModule } from '@angular/common/http';\n\nimport { AppRoutingModule } from './app-routing.module';\nimport { AppComponent } from './app.component';\nimport { BrowserAnimationsModule } from '@angular/platform-browser/animations';\nimport { environment } from 'src/environments/environment';\n\nimport { getFirestore, provideFirestore } from '@angular/fire/firestore';\nimport { CloudinaryModule } from '@cloudinary/ng';\n// material\nimport { MatToolbarModule } from '@angular/material/toolbar';\nimport { MatSidenavModule } from '@angular/material/sidenav';\nimport { MatFormFieldModule } from '@angular/material/form-field';\nimport { MatInputModule } from '@angular/material/input';\nimport { MatSelectModule } from '@angular/material/select';\nimport { MatCheckboxModule } from '@angular/material/checkbox';\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatDialogModule } from '@angular/material/dialog';\nimport { MatIconModule } from '@angular/material/icon';\n\n// components\nimport { CreateSectionComponent } from './components/create-section/create-section.component';\nimport { ViewEditSectionComponent } from './components/view-edit-section/view-edit-section.component';\nimport { ImageLibraryComponent } from './components/image-library/image-library.component';\nimport { initializeApp, provideFirebaseApp } from '@angular/fire/app';\nimport { getAuth, provideAuth } from '@angular/fire/auth';\nimport { AddImageComponent } from './modals/add-image/add-image.component';\n\n@NgModule({\n  declarations: [\n    AppComponent,\n    CreateSectionComponent,\n    ViewEditSectionComponent,\n    ImageLibraryComponent,\n    AddImageComponent,\n  ],\n  imports: [\n    BrowserModule,\n    AppRoutingModule,\n    BrowserAnimationsModule,\n    ReactiveFormsModule,\n    HttpClientModule,\n    FormsModule,\n    //material\n    MatToolbarModule,\n    MatSidenavModule,\n    MatFormFieldModule,\n    MatInputModule,\n    MatSelectModule,\n    MatCheckboxModule,\n    MatButtonModule,\n    MatDialogModule,\n    MatIconModule,\n\n    // firebase\n    provideFirebaseApp(() =>\n      initializeApp({\n        projectId: 'studio67-35e87',\n        appId: '1:516073702238:web:8765c463bb7971686345cf',\n        storageBucket: 'studio67-35e87.appspot.com',\n        apiKey: 'AIzaSyDgf6uWyG7UCQtgV8xJaLPlDoprz82vtsk',\n        authDomain: 'studio67-35e87.firebaseapp.com',\n        messagingSenderId: '516073702238',\n        measurementId: 'G-YGETES4YG7',\n      })\n    ),\n    provideAuth(() => getAuth()),\n    provideFirestore(() => getFirestore()),\n\n    // cloudinary\n    CloudinaryModule,\n  ],\n  providers: [],\n  bootstrap: [AppComponent],\n})\nexport class AppModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "AddImageComponent"
+                        },
+                        {
+                            "name": "AppComponent"
+                        },
+                        {
+                            "name": "CreateSectionComponent"
+                        },
+                        {
+                            "name": "ImageLibraryComponent"
+                        },
+                        {
+                            "name": "ViewEditSectionComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": [
+                        {
+                            "name": "AppRoutingModule"
+                        },
+                        {
+                            "name": "provideAuth(() => getAuth())"
+                        },
+                        {
+                            "name": "provideFirebaseApp(() => initializeApp({\n    projectId: , appId: , storageBucket: , apiKey: , authDomain: , messagingSenderId: , measurementId: ,\n}))"
+                        },
+                        {
+                            "name": "provideFirestore(() => getFirestore())"
+                        }
+                    ]
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": [
+                        {
+                            "name": "AppComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "AppRoutingModule",
+            "id": "module-AppRoutingModule-3ff48eba88223dffbc6f458f1eaa75cb62158331dae1e32becc817bd540ac519e8e206d4bed17efd660575ca5cc543abc917cb2908773bf0e3812bb21b4b4696",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/app-routing.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { CreateSectionComponent } from './components/create-section/create-section.component';\nimport { ViewEditSectionComponent } from './components/view-edit-section/view-edit-section.component';\nimport { ImageLibraryComponent } from './components/image-library/image-library.component';\n\nconst routes: Routes = [\n  {\n    path: 'create-section',\n    component: CreateSectionComponent,\n  },\n  {\n    path: 'create-section/:id',\n    component: CreateSectionComponent,\n  },\n  {\n    path: 'view-edit-section',\n    component: ViewEditSectionComponent,\n  },\n  {\n    path: 'image-library',\n    component: ImageLibraryComponent,\n  },\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule],\n})\nexport class AppRoutingModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n  production: false,\n  apiKey: 'AIzaSyDgf6uWyG7UCQtgV8xJaLPlDoprz82vtsk',\n  authDomain: 'studio67-35e87.firebaseapp.com',\n  projectId: 'studio67-35e87',\n  storageBucket: 'studio67-35e87.appspot.com',\n  messagingSenderId: '516073702238',\n  appId: '1:516073702238:web:8765c463bb7971686345cf',\n  measurementId: 'G-YGETES4YG7',\n}"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    user: {\n      name: 'Jane Doe',\n    },\n  },\n}"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const loginButton = canvas.getByRole('button', { name: /Log in/i });\n    await expect(loginButton).toBeInTheDocument();\n    await userEvent.click(loginButton);\n    await expect(loginButton).not.toBeInTheDocument();\n\n    const logoutButton = canvas.getByRole('button', { name: /Log out/i });\n    await expect(logoutButton).toBeInTheDocument();\n  },\n}"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<ButtonComponent>",
+                "defaultValue": "{\n  title: 'Example/Button',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  render: (args: ButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<HeaderComponent>",
+                "defaultValue": "{\n  title: 'Example/Header',\n  component: HeaderComponent,\n  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs\n  tags: ['autodocs'],\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout\n    layout: 'fullscreen',\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<PageComponent>",
+                "defaultValue": "{\n  title: 'Example/Page',\n  component: PageComponent,\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout\n    layout: 'fullscreen',\n  },\n}"
+            },
+            {
+                "name": "preview",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": ".storybook/preview.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Preview",
+                "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
+            },
+            {
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    size: 'small',\n    label: 'Button',\n  },\n}"
+            }
+        ],
+        "functions": [],
+        "typealiases": [
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<ButtonComponent>",
+                "file": "src/stories/button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<HeaderComponent>",
+                "file": "src/stories/header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<PageComponent>",
+                "file": "src/stories/page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            }
+        ],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n  production: false,\n  apiKey: 'AIzaSyDgf6uWyG7UCQtgV8xJaLPlDoprz82vtsk',\n  authDomain: 'studio67-35e87.firebaseapp.com',\n  projectId: 'studio67-35e87',\n  storageBucket: 'studio67-35e87.appspot.com',\n  messagingSenderId: '516073702238',\n  appId: '1:516073702238:web:8765c463bb7971686345cf',\n  measurementId: 'G-YGETES4YG7',\n}"
+                }
+            ],
+            "src/stories/button.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<ButtonComponent>",
+                    "defaultValue": "{\n  title: 'Example/Button',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  render: (args: ButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    size: 'small',\n    label: 'Button',\n  },\n}"
+                }
+            ],
+            "src/stories/header.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    user: {\n      name: 'Jane Doe',\n    },\n  },\n}"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<HeaderComponent>",
+                    "defaultValue": "{\n  title: 'Example/Header',\n  component: HeaderComponent,\n  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs\n  tags: ['autodocs'],\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout\n    layout: 'fullscreen',\n  },\n}"
+                }
+            ],
+            "src/stories/page.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const loginButton = canvas.getByRole('button', { name: /Log in/i });\n    await expect(loginButton).toBeInTheDocument();\n    await userEvent.click(loginButton);\n    await expect(loginButton).not.toBeInTheDocument();\n\n    const logoutButton = canvas.getByRole('button', { name: /Log out/i });\n    await expect(logoutButton).toBeInTheDocument();\n  },\n}"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<PageComponent>",
+                    "defaultValue": "{\n  title: 'Example/Page',\n  component: PageComponent,\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout\n    layout: 'fullscreen',\n  },\n}"
+                }
+            ],
+            ".storybook/preview.ts": [
+                {
+                    "name": "preview",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": ".storybook/preview.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Preview",
+                    "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {
+            "src/stories/button.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<ButtonComponent>",
+                    "file": "src/stories/button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "src/stories/header.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<HeaderComponent>",
+                    "file": "src/stories/header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "src/stories/page.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<PageComponent>",
+                    "file": "src/stories/page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ]
+        }
+    },
+    "routes": {
+        "name": "<root>",
+        "kind": "module",
+        "className": "AppModule",
+        "children": [
+            {
+                "name": "routes",
+                "filename": "src/app/app-routing.module.ts",
+                "module": "AppRoutingModule",
+                "children": [
+                    {
+                        "path": "create-section",
+                        "component": "CreateSectionComponent"
+                    },
+                    {
+                        "path": "create-section/:id",
+                        "component": "CreateSectionComponent"
+                    },
+                    {
+                        "path": "view-edit-section",
+                        "component": "ViewEditSectionComponent"
+                    },
+                    {
+                        "path": "image-library",
+                        "component": "ImageLibraryComponent"
+                    }
+                ],
+                "kind": "module"
+            }
+        ]
+    },
+    "coverage": {
+        "count": 2,
+        "status": "low",
+        "files": [
+            {
+                "filePath": ".storybook/preview.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "preview",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/create-section/create-section.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CreateSectionComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/13",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/image-library/image-library.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ImageLibraryComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/view-edit-section/view-edit-section.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ViewEditSectionComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/modals/add-image/add-image.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AddImageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/12",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/section.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "Section",
+                "coveragePercent": 0,
+                "coverageCount": "0/10",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/section.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "SectionImage",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/section.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "ISection",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/section.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "ISectionImage",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/queryside.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "QuerysideService",
+                "coveragePercent": 0,
+                "coverageCount": "0/9",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/section.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "SectionService",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/environments/environment.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "environment",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 83,
+                "coverageCount": "5/6",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/user.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            }
+        ]
+    }
+}

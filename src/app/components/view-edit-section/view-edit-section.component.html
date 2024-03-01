@@ -1,0 +1,60 @@
+@for (section of sections$ | async; track $index) { @if(!editMode || editSection
+!== section.id){
+<section [ngClass]="['section', section.background + '-background']">
+  <button
+    mat-button
+    class="edit-btn"
+    color="primary"
+    (click)="toggleEditMode(section)"
+  >
+    {{ editMode ? "View" : "Edit" }}
+  </button>
+
+  <button
+    mat-fab
+    color="warn"
+    aria-label="Example icon button with a delete icon"
+    class="delete-btn"
+    (click)="delete(section)"
+  >
+    <mat-icon>delete</mat-icon>
+  </button>
+
+  <h1>{{ section.section_title }}</h1>
+  <div class="cards-container">
+    @for (item of section.section_images; track $index) {
+    <div class="gallery-card">
+      @if(editMode){<button
+        mat-icon-button
+        class="edit-btn"
+        (click)="editImage(item)"
+      >
+        <mat-icon fontIcon="edit"></mat-icon></button
+      >}
+      <div class="image-container">
+        @if(item.sold){
+        <div class="sold-banner">Sold</div>
+        }
+        <img
+          [alt]="item.name"
+          [src]="
+            'https://res.cloudinary.com/denerup17/image/upload/v1707048218/' +
+            item.imageUrl
+          "
+        />
+      </div>
+
+      <div className="card-details">
+        <h5>{{ item.name }}</h5>
+        <h6 className="{sourceSansPro.className}">{{ item.price }}</h6>
+      </div>
+    </div>
+    }
+  </div>
+</section>
+} @else if(editMode && editSection === section.id) {
+<app-create-section
+  [newSection]="section"
+  (saved)="toggleEditMode(section)"
+></app-create-section>
+} }

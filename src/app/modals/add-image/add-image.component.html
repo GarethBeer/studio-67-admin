@@ -1,0 +1,72 @@
+<form>
+  <h2>Add Image</h2>
+  <mat-form-field>
+    <mat-label> Image Name </mat-label>
+    <input matInput [(ngModel)]="imageForm.name" name="name" />
+  </mat-form-field>
+
+  <div class="row">
+    <mat-form-field>
+      <mat-label> Price </mat-label>
+      <input matInput [(ngModel)]="imageForm.price" name="price" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label> Order </mat-label>
+      <input
+        matInput
+        type="number"
+        [(ngModel)]="imageForm.order"
+        name="order"
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label> Sold </mat-label>
+      <mat-select matInput [(ngModel)]="imageForm.sold" name="sold">
+        <mat-option [value]="true">True</mat-option>
+        <mat-option [value]="false">False</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label> Active </mat-label>
+      <mat-select matInput [(ngModel)]="imageForm.active" name="active">
+        <mat-option [value]="true">True</mat-option>
+        <mat-option [value]="false">False</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <mat-form-field>
+    <mat-label> Description </mat-label>
+    <textarea
+      matInput
+      rows="10"
+      cols="5"
+      [(ngModel)]="imageForm.description"
+      name="description"
+    ></textarea>
+  </mat-form-field>
+
+  <img [src]="imageUrl" width="150px" height="200px" *ngIf="imageUrl" />
+
+  <button
+    type="button"
+    mat-raised-button
+    color="primary"
+    (click)="fileInput.click()"
+  >
+    Choose File
+  </button>
+  <input
+    hidden
+    (change)="onFileSelected($event)"
+    #fileInput
+    type="file"
+    id="file"
+  />
+</form>
+
+<button mat-raised-button color="secondary" (click)="closeDialog()">
+  Save
+</button>

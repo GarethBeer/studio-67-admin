@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "studio-67-admin",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

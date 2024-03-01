@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "studio67-35e87": {
+      "hosting": {
+        "studio-67-admin": [
+          "studio67-35e87"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "studio67-35e87"
+  }
+}

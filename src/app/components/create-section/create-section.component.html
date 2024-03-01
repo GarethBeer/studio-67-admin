@@ -1,0 +1,74 @@
+@if(newSection; as Section){
+<form>
+  <div class="title-row">
+    <mat-form-field>
+      <mat-label>Section Title</mat-label>
+      <input
+        matInput
+        [(ngModel)]="Section.section_title"
+        name="section_title"
+      />
+    </mat-form-field>
+    <mat-checkbox
+      class="title-checkbox"
+      matInput
+      [(ngModel)]="Section.display_title"
+      name="display_section"
+      >Display Title</mat-checkbox
+    >
+  </div>
+  <div class="meta-container">
+    <mat-form-field>
+      <mat-label>Background Color</mat-label>
+      <mat-select matInput [(ngModel)]="Section.background" name="background">
+        <mat-option value="black">Black</mat-option>
+        <mat-option value="white">White</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Order</mat-label>
+      <input matInput type="number" [(ngModel)]="Section.order" name="order" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Active</mat-label>
+      <mat-select matInput [(ngModel)]="Section.active" name="active">
+        <mat-option [value]="true">True</mat-option>
+        <mat-option [value]="false">False</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="loadImageDialog(null)"
+      type="button"
+    >
+      Add Image
+    </button>
+  </div>
+  <div class="images-container">
+    @for(image of Section.section_images; track image){
+    <img
+      [src]="
+        'https://res.cloudinary.com/denerup17/image/upload/v1707048218/' +
+        image.imageUrl
+      "
+      width="250"
+      height="300"
+      (click)="loadImageDialog(image)"
+    />
+    }
+  </div>
+
+  <button
+    mat-raised-button
+    color="primary"
+    [disabled]="disabled"
+    (click)="save(Section)"
+  >
+    Save
+  </button>
+</form>
+}

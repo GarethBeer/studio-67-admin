@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.content-container {
+  width: 100%;
+  min-height: 100vh;
+  .sidenav {
+    min-width: 200px;
+
+    .sidenav-links {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      li {
+        text-align: center;
+        list-style: none;
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+        &:hover,
+        &.active {
+          background-color: whitesmoke;
+          color: black;
+        }
+      }
+    }
+  }
+
+  .main {
+    margin: 15px;
+  }
+}

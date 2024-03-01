@@ -1,0 +1,23 @@
+:host {
+  min-width: 80%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 24px 16px;
+  align-items: center;
+  gap: 1rem;
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    h2 {
+      color: white;
+    }
+    .row {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}
