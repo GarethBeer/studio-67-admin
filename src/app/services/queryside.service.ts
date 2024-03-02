@@ -10,6 +10,7 @@ import {
   getDoc,
 } from '@angular/fire/firestore';
 import { documentId, updateDoc } from 'firebase/firestore';
+import { generateRandomId } from '../utils/utils';
 
 @Injectable({ providedIn: 'root' })
 export class QuerysideService {
@@ -26,12 +27,12 @@ export class QuerysideService {
   async addSectionToCollection(document: any, collectionName: string) {
     console.log(document);
 
-    if (!document.id) {
+    if (!document.docId) {
       const collectionRef = collection(this.store, collectionName);
-      document.id = this.generateRandomId(12);
+      document.id = generateRandomId(12);
       return await addDoc(collectionRef, { ...document });
     } else {
-      const docRef = doc(this.store, collectionName, document.id);
+      const docRef = doc(this.store, collectionName, document.docId);
       return await updateDoc(docRef, { ...document });
     }
   }
@@ -43,18 +44,5 @@ export class QuerysideService {
 
   async getSection(docId: string, collectionName: string) {
     return (await getDoc(doc(this.store, collectionName, docId))).data();
-  }
-
-  generateRandomId(length = 8) {
-    const characters =
-      'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let randomId = '';
-
-    for (let i = 0; i < length; i++) {
-      const randomIndex = Math.floor(Math.random() * characters.length);
-      randomId += characters.charAt(randomIndex);
-    }
-
-    return randomId;
   }
 }

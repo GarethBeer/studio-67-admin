@@ -1,3 +1,8 @@
+<div class="top-bar">
+  <button mat-button color="primary" (click)="addSection()">
+    Add New Section
+  </button>
+</div>
 @for (section of sections$ | async; track $index) { @if(!editMode || editSection
 !== section.id){
 <section [ngClass]="['section', section.background + '-background']">

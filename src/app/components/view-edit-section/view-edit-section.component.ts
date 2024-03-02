@@ -3,8 +3,9 @@ import { Firestore, collection, collectionData } from '@angular/fire/firestore';
 import { MatDialog } from '@angular/material/dialog';
 import { Observable, map, tap } from 'rxjs';
 import { AddImageComponent } from 'src/app/modals/add-image/add-image.component';
-import { ISection } from 'src/app/models/section';
+import { ISection, Section } from 'src/app/models/section';
 import { SectionService } from 'src/app/services/section.service';
+import { generateRandomId } from 'src/app/utils/utils';
 @Component({
   selector: 'app-view-edit-section',
   templateUrl: './view-edit-section.component.html',
@@ -42,6 +43,19 @@ export class ViewEditSectionComponent implements OnInit {
     return;
   }
 
+  addSection() {
+    this.sections$ = this.sections$?.pipe(
+      map((sections) => {
+        const newSection = new Section();
+        newSection.id = generateRandomId(12);
+        sections.unshift(newSection);
+        this.editMode = true;
+        this.editSection = newSection.id;
+        return sections;
+      })
+    );
+  }
+
   editImage(image: any) {
     const res = this.dialog.open(AddImageComponent, {
       data: image,
@@ -49,6 +63,7 @@ export class ViewEditSectionComponent implements OnInit {
   }
 
   async save(section: any) {
+    console.log(section);
     await this.sectionService.save(section);
   }
 

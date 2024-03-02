@@ -15,6 +15,7 @@ import { QuerysideService } from 'src/app/services/queryside.service';
 import { MatDialog } from '@angular/material/dialog';
 import { AddImageComponent } from 'src/app/modals/add-image/add-image.component';
 import { ActivatedRoute } from '@angular/router';
+import { generateRandomId } from 'src/app/utils/utils';
 
 @Component({
   selector: 'app-create-section',
@@ -61,11 +62,13 @@ export class CreateSectionComponent implements OnInit {
           if (data && !data.file) {
             return of([null, data]);
           }
+          console.log(data);
           if (data && data?.imageData) {
             const uploadImage$ = this.uploadImage(
               data.file,
               data.imageData.name
             );
+            data.imageData.id = generateRandomId(12);
             const dialogData$ = of(data);
             return forkJoin([uploadImage$, dialogData$]);
           }
@@ -73,6 +76,7 @@ export class CreateSectionComponent implements OnInit {
           return of([]);
         }),
         map((res) => {
+          console.log('res');
           if (res.length > 0) {
             const [uploadData, dialogData] = res;
             const imageUrl = uploadData
@@ -84,6 +88,7 @@ export class CreateSectionComponent implements OnInit {
         })
       )
       .subscribe((result) => {
+        console.log(result, this.newSection);
         if (result) {
           const ind = this.newSection.section_images.findIndex(
             (image: ISectionImage) => image.id === result.id
