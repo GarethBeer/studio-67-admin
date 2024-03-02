@@ -31,6 +31,7 @@ export class CreateSectionComponent implements OnInit {
   // component state
   @Input() newSection: ISection = new Section();
   @Output() saved: EventEmitter<any> = new EventEmitter();
+  @Output() view: EventEmitter<any> = new EventEmitter();
   @Input() nested: boolean = false;
 
   file: any = null;

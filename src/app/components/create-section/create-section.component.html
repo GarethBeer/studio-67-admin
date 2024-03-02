@@ -1,5 +1,8 @@
 @if(newSection; as Section){
 <form>
+  <button mat-button color="primary" class="view-btn" (click)="view.emit()">
+    View
+  </button>
   <div class="title-row">
     <mat-form-field>
       <mat-label>Section Title</mat-label>

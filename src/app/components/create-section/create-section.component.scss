@@ -9,6 +9,12 @@
     flex-direction: column;
     border: 1px solid grey;
     gap: 1rem;
+    position: relative;
+    .view-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
     .title-row {
       width: 100%;
       display: flex;

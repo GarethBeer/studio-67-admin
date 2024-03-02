@@ -43,6 +43,11 @@ export class ViewEditSectionComponent implements OnInit {
     return;
   }
 
+  viewSection() {
+    this.editSection = null;
+    this.editMode = false;
+  }
+
   addSection() {
     this.sections$ = this.sections$?.pipe(
       map((sections) => {

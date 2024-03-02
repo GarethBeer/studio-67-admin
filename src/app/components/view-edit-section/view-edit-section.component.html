@@ -60,6 +60,7 @@
 } @else if(editMode && editSection === section.id) {
 <app-create-section
   [newSection]="section"
+  (view)="viewSection()"
   (saved)="toggleEditMode(section)"
 ></app-create-section>
 } }
